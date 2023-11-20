@@ -29,7 +29,7 @@ def prepare_data_for_prediction(df):
         "Categoria",
         "Sub categoria",
         "Nivel 6",
-        "Ingresos",
+        #"Ingresos",
         "Precio",
     ]
     label_encoders = {}

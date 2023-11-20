@@ -82,7 +82,7 @@ class ModelSaver:
         torch.save(self.model.state_dict(), file_name)
 
 class DataLoaderManager:
-    def __init__(self, batch_size=128, device='cpu'):
+    def __init__(self, batch_size=64, device='cpu'):
         self.device = device
         self.batch_size = batch_size
 
@@ -166,7 +166,7 @@ class DataProcessor:
             "Categoria",
             "Sub categoria",
             "Nivel 6",
-            "Ingresos",
+            #"Ingresos",
             "Precio",
         ]
 

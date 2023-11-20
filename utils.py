@@ -82,7 +82,7 @@ class ModelSaver:
         torch.save(self.model.state_dict(), file_name)
 
 class DataLoaderManager:
-    def __init__(self, batch_size=64, device='cpu'):
+    def __init__(self, batch_size=128, device='cpu'):
         self.device = device
         self.batch_size = batch_size
 
@@ -100,7 +100,7 @@ class DataLoaderManager:
 
 class ModelTrainer:
     def __init__(
-        self, model, criterion, optimizer, train_loader, test_loader, num_epochs=2000
+        self, model, criterion, optimizer, train_loader, test_loader, num_epochs=4000
     ):
         self.model = model
         self.criterion = criterion

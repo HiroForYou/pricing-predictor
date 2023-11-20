@@ -1,3 +1,4 @@
 /data/*
 !/data/__init__.py
 /weights
+/__pycache__
